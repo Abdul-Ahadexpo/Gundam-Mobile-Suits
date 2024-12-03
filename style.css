@@ -1,0 +1,144 @@
+/* Tailwind and DaisyUI styles included */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  background-color: #1f2937; /* Dark background for the header */
+}
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem;
+}
+
+h2,
+h3 {
+  font-family: "Arial", sans-serif;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #68d391; /* Green on hover */
+}
+
+#popup-modal img {
+  transition: transform 0.3s ease;
+}
+
+#popup-modal img:hover {
+  transform: scale(1.1);
+}
+/* ART */
+
+/* Base Dark Theme */
+body {
+  background-color: #121212; /* Dark base */
+  color: #ffffff; /* White text for contrast */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+/* Center text styles */
+h1,
+p {
+  text-align: center;
+}
+
+/* Abstract Gradient Animation */
+body:hover,
+body:focus,
+body:active {
+  background: linear-gradient(135deg, #002781, #005338, #032a74, #2a0027);
+  background-size: 300% 300%;
+  animation: smoothAbstract 5s ease infinite;
+}
+
+@keyframes smoothAbstract {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Active scroll effect */
+body:active {
+  background: linear-gradient(135deg, #1b2246, #004070, #2f3f5e, #19192e);
+  animation: smoothScroll 8s ease infinite;
+}
+
+@keyframes smoothScroll {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+/* Card styles */
+.card {
+  background-color: #262835; /* Dark card background */
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.08);
+  background: linear-gradient(145deg, #1b1b2e, #29293f);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Button styles */
+button {
+  background-color: #001f3f; /* Deep blue button */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.4s ease-in-out, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0074d9; /* Bright blue hover */
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Additional button styles */
+.btn-primary {
+  background-color: #0099ff; /* Lighter blue */
+}
+
+.btn-primary:hover {
+  background-color: #00cfff;
+  color: #121212;
+}
+
+.btn-secondary {
+  background-color: #00a854; /* Green secondary button */
+}
+
+.btn-secondary:hover {
+  background-color: #00e075;
+  color: #121212;
+}
