@@ -10,34 +10,6 @@
 
 
   <style>
-    /* Slider fade animation */
-    @keyframes slideIn {
-      from {
-        transform: translateX(100%);
-        opacity: 0;
-      }
-
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-
-    /* Slider fade effect */
-    @keyframes fadeOut {
-      from {
-        opacity: 1;
-      }
-
-      to {
-        opacity: 0;
-      }
-    }
-
-    .slider-fade {
-      animation: fadeOut 4s ease-in-out infinite alternate;
-    }
-
     /* Mobile-specific styling */
     @media (max-width: 640px) {
       .hero-slider img {
@@ -117,12 +89,17 @@
   <section id="allslider" class="relative">
     <div class="overflow-hidden">
       <div class="hero-slider flex">
+
         <img src="https://th.bing.com/th/id/OIP.IjtT72TcEVC8RegRD0OQ6AHaEK?rs=1&pid=ImgDetMain" alt="Gundam Aerial"
           class="slider-fade">
+
         <img src="https://th.bing.com/th/id/R.8d71a28df5434dd7704bf5b0bce819e1?rik=I9PBR84gLMkDMw&pid=ImgRaw&r=0"
           alt="Gundam Pharact" class="slider-fade">
+
         <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/12/grassley-house-mobile-suits.jpg"
           alt="Darilbalde" class="slider-fade">
+
+
       </div>
     </div>
     <div id="ha2" class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center">
@@ -144,10 +121,21 @@
         slides[index].classList.add("hidden");
         index = (index + 1) % slides.length;
         slides[index].classList.remove("hidden");
-      }, 6500);
+      }, 3000);
     });
   </script>
+  <style>
+    /* Ensure images are positioned properly */
+    .hero-slider {
+      height: 100vh;
+      /* Full height for hero */
+    }
 
+    #ha2 {
+      position: absolute;
+      top: -500px;
+    }
+  </style>
 
 </body>
 
