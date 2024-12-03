@@ -40,7 +40,7 @@
 
 
   <!-- Navbar -->
-  <header class="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-4 shadow-lg">
+  <header class="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-4 shadow-lg -z-40">
 
 
     <nav class="container mx-auto flex flex-wrap justify-between items-center">
@@ -132,8 +132,17 @@
     }
 
     #ha2 {
-      position: absolute;
-      top: -500px;
+      /* position: relative; */
+      height: 556px;
+      top: 0px;
+    }
+
+    @media (max-width: 640px) {
+      #ha2 {
+        /* position: relative; */
+        height: 340px;
+        top: 0px;
+      }
     }
   </style>
 
